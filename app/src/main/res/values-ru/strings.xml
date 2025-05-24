@@ -8,9 +8,9 @@
 <string name="action_export_err">Не удалось экспортировать.</string>
 <string name="action_export_file">Экспорт в файл</string>
 <string name="action_export_msg">Успешно экспортировано!</string>
-<string name="action_import">Импорт из буфера обмена</string>
+<string name="action_import">Импорт из буфера</string>
 <string name="action_import_err">Не удалось импортировать.</string>
-<string name="action_import_file">Импортировать из файла</string>
+<string name="action_import_file">Импорт из файла</string>
 <string name="action_import_msg">Успешно импортировано!</string>
 <string name="action_learn_more">УЗНАТЬ БОЛЬШЕ</string>
 <string name="action_switch">Переключить</string>
