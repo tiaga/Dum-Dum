@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name" translatable="false">NekoBox</string>
-    <string name="app_name_long" translatable="false">NekoBox for Android</string>
+    <string name="app_name" translatable="false">Dum-Dum</string>
+    <string name="app_name_long" translatable="false">Dum-Dum for Android</string>
     <string name="app_desc">The universal proxy toolchain for Android, written in Kotlin.</string>
     <string name="project">Project</string>
     <string name="github">Source code</string>
@@ -100,11 +100,11 @@
     <!-- proxy category -->
     <string name="profile_name">Profile Name</string>
     <string name="server_address">Server</string>
-    <string name="server_port">Remote Port</string>
+    <string name="server_port">Port</string>
     <string name="username">Username</string>
-    <string name="username_opt">Username (Optional)</string>
-    <string name="password_opt">Password (Optional)</string>
-    <string name="key_opt">Key (Optional)</string>
+    <string name="username_opt">Username (optional)</string>
+    <string name="password_opt">Password (optional)</string>
+    <string name="key_opt">Key (optional)</string>
     <string name="password">Password</string>
     <string name="enc_method">Encrypt Method</string>
     <string name="protocol">Protocol</string>
@@ -113,7 +113,7 @@
     <string name="obfs_param">Obfs Param</string>
     <string name="uuid">User ID</string>
     <string name="alter_id">Alter ID</string>
-    <string name="security">Transport layer encryption</string>
+    <string name="security">Encryption</string>
     <string name="network">Network</string>
     <string name="header_type">Header Type</string>
     <string name="ws_host">WebSocket Host</string>
@@ -200,7 +200,7 @@
     <!-- alert category -->
     <string name="profile_empty">Please select a profile</string>
     <string name="connect">Connect</string>
-    <string name="clipboard_empty">Clipboard is empty</string>
+    <string name="clipboard_empty">Buffer is empty</string>
     <!-- menu category -->
     <string name="settings">Settings</string>
     <string name="edit">Edit</string>
@@ -208,7 +208,7 @@
     <string name="add_profile">Add Profile</string>
     <string name="select_profile">Select Profile</string>
     <string name="action_socks" translatable="false">SOCKS</string>
-    <string name="action_http" translatable="false">HTTP</string>
+    <string name="action_http" translatable="false">HTTP(S)</string>
     <string name="action_shadowsocks" translatable="false">Shadowsocks</string>
     <string name="action_shadowsocksr" translatable="false">ShadowsocksR</string>
     <string name="action_vmess" translatable="false">VMess</string>
@@ -236,9 +236,9 @@
     <string name="action_from_link">From subscription</string>
     <string name="action_scan_china_apps">Scan China apps</string>
     <string name="action_export_file">Export to file</string>
-    <string name="action_export_clipboard">Export to Clipboard</string>
+    <string name="action_export_clipboard">Export to buffer</string>
     <string name="action_export">Export</string>
-    <string name="action_import">Import from Clipboard</string>
+    <string name="action_import">Import from buffer</string>
     <string name="action_import_file">Import from file</string>
     <string name="action_export_msg">Successfully export!</string>
     <string name="action_export_err">Failed to export.</string>
