@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <PreferenceCategory app:title="@string/general_settings">
         <SwitchPreference
-            app:defaultValue="false"
+            app:defaultValue="true"
             app:icon="@drawable/ic_communication_phonelink_ring"
             app:key="isAutoConnect"
             app:summary="@string/auto_connect_summary"
@@ -57,7 +57,7 @@
             app:summary="@string/profile_traffic_statistics_summary"
             app:title="@string/profile_traffic_statistics" />
         <SwitchPreference
-            app:defaultValue="true"
+            app:defaultValue="false"
             app:icon="@drawable/ic_baseline_speed_24"
             app:key="showDirectSpeed"
             app:summary="@string/show_direct_speed_sum"
@@ -137,7 +137,7 @@
 
     <PreferenceCategory app:title="@string/cag_dns">
         <EditTextPreference
-            app:defaultValue="https://dns.google/dns-query"
+            app:defaultValue="tls://dns.google"
             app:icon="@drawable/ic_action_dns"
             app:key="remoteDns"
             app:title="@string/remote_dns"
@@ -170,7 +170,7 @@
             app:title="@string/domain_strategy_for_server"
             app:useSimpleSummaryProvider="true" />
         <SwitchPreference
-            app:defaultValue="true"
+            app:defaultValue="false"
             app:icon="@drawable/ic_baseline_camera_24"
             app:key="enableDnsRouting"
             app:summary="@string/dns_routing_message"
@@ -202,7 +202,7 @@
 
     <PreferenceCategory app:title="@string/cag_misc">
         <moe.matsuri.nb4a.ui.UrlTestPreference
-            app:defaultValue="http://cp.cloudflare.com/"
+            app:defaultValue="http://alidns.com/"
             app:icon="@drawable/ic_baseline_cast_connected_24"
             app:key="connectionTestURL"
             app:title="@string/connection_test_url"
