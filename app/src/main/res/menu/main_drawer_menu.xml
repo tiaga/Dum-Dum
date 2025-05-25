@@ -10,7 +10,8 @@
         <item
             android:id="@+id/nav_group"
             android:icon="@drawable/ic_baseline_view_list_24"
-            android:title="@string/menu_group" />
+            android:title="@string/menu_group"
+            android:visible="false" />
 
         <item
             android:id="@+id/nav_route"
@@ -25,7 +26,8 @@
 
     <group
         android:id="@+id/misc"
-        android:checkableBehavior="single">
+        android:checkableBehavior="single"
+        android:visible="false">
         <item
             android:id="@+id/nav_logcat"
             android:icon="@drawable/ic_baseline_bug_report_24"
@@ -46,11 +48,13 @@
         <item
             android:id="@+id/nav_tuiguang"
             android:icon="@drawable/ic_social_share"
-            android:title="@string/ads" />
+            android:title="@string/ads"
+            android:visible="false" />
         <item
             android:id="@+id/nav_faq"
             android:icon="@drawable/ic_device_data_usage"
-            android:title="@string/document" />
+            android:title="@string/document"
+            android:visible="false" />
         <item
             android:id="@+id/nav_about"
             android:icon="@drawable/ic_baseline_info_24"
