@@ -5,7 +5,8 @@
         android:id="@+id/action_search"
         android:title="@android:string/search_go"
         app:actionViewClass="androidx.appcompat.widget.SearchView"
-        app:showAsAction="always" />
+        app:showAsAction="always"
+        android:visible="false" />
 
     <item
         android:id="@+id/action_add"
@@ -14,67 +15,82 @@
         app:showAsAction="ifRoom">
         <menu>
             <item
-                android:id="@+id/action_scan_qr_code"
-                android:title="@string/add_profile_methods_scan_qr_code" />
+                android:id="@+id/action_new_socks"
+                android:title="@string/action_socks" />
             <item
-                android:id="@+id/action_import_clipboard"
-                android:title="@string/action_import" />
-            <item
-                android:id="@+id/action_import_file"
-                android:title="@string/action_import_file" />
+                android:id="@+id/action_new_http"
+                android:title="@string/action_http" />
             <item android:title="@string/add_profile_methods_manual_settings">
                 <menu>
                     <item
-                        android:id="@+id/action_new_socks"
-                        android:title="@string/action_socks" />
+                        android:id="@+id/action_scan_qr_code"
+                        android:title="@string/add_profile_methods_scan_qr_code" />
                     <item
-                        android:id="@+id/action_new_http"
-                        android:title="@string/action_http" />
+                        android:id="@+id/action_import_clipboard"
+                        android:title="@string/action_import" />
+                    <item
+                        android:id="@+id/action_import_file"
+                        android:title="@string/action_import_file" />
                     <item
                         android:id="@+id/action_new_ss"
-                        android:title="@string/action_shadowsocks" />
+                        android:title="@string/action_shadowsocks"
+                        android:visible="false" />
                     <item
                         android:id="@+id/action_new_vmess"
-                        android:title="@string/action_vmess" />
+                        android:title="@string/action_vmess"
+                        android:visible="false" />
                     <item
                         android:id="@+id/action_new_vless"
-                        android:title="VLESS" />
+                        android:title="VLESS"
+                        android:visible="false" />
                     <item
                         android:id="@+id/action_new_trojan"
-                        android:title="@string/action_trojan" />
+                        android:title="@string/action_trojan"
+                        android:visible="false" />
                     <item
                         android:id="@+id/action_new_trojan_go"
-                        android:title="@string/action_trojan_go" />
+                        android:title="@string/action_trojan_go"
+                        android:visible="false" />
                     <item
                         android:id="@+id/action_new_mieru"
-                        android:title="@string/action_mieru" />
+                        android:title="@string/action_mieru"
+                        android:visible="false" />
                     <item
                         android:id="@+id/action_new_naive"
-                        android:title="@string/action_naive" />
+                        android:title="@string/action_naive"
+                        android:visible="false" />
                     <item
                         android:id="@+id/action_new_hysteria"
-                        android:title="@string/action_hysteria" />
+                        android:title="@string/action_hysteria"
+                        android:visible="false" />
                     <item
                         android:id="@+id/action_new_tuic"
-                        android:title="@string/action_tuic" />
+                        android:title="@string/action_tuic"
+                        android:visible="false" />
                     <item
                         android:id="@+id/action_new_shadowtls"
-                        android:title="@string/action_shadowtls" />
+                        android:title="@string/action_shadowtls"
+                        android:visible="false" />
                     <item
                         android:id="@+id/action_new_anytls"
-                        android:title="@string/action_anytls" />
+                        android:title="@string/action_anytls"
+                        android:visible="false" />
                     <item
                         android:id="@+id/action_new_ssh"
-                        android:title="@string/action_ssh" />
+                        android:title="@string/action_ssh"
+                        android:visible="false" />
                     <item
                         android:id="@+id/action_new_wg"
-                        android:title="@string/action_wireguard" />
+                        android:title="@string/action_wireguard"
+                        android:visible="false" />
                     <item
                         android:id="@+id/action_new_config"
-                        android:title="@string/custom_config" />
+                        android:title="@string/custom_config"
+                        android:visible="false" />
                     <item
                         android:id="@+id/action_new_chain"
-                        android:title="@string/proxy_chain" />
+                        android:title="@string/proxy_chain"
+                        android:visible="false" />
                 </menu>
             </item>
         </menu>
@@ -84,7 +100,8 @@
         android:id="@+id/action_misc"
         android:icon="@drawable/ic_baseline_more_vert_24"
         android:title=""
-        app:showAsAction="always">
+        app:showAsAction="always"
+        android:visible="false">
         <menu>
             <item
                 android:id="@+id/action_update_subscription"
