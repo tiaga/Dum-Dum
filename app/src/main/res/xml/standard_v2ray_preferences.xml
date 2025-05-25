@@ -8,6 +8,13 @@
 
     <PreferenceCategory app:title="@string/proxy_cat">
 
+        <moe.matsuri.nb4a.ui.SimpleMenuPreference
+            app:entries="@array/transport_layer_encryption_value"
+            app:entryValues="@array/transport_layer_encryption_value"
+            app:icon="@drawable/ic_baseline_layers_24"
+            app:key="security"
+            app:title="@string/security"
+            app:useSimpleSummaryProvider="true" />
         <EditTextPreference
             app:icon="@drawable/ic_hardware_router"
             app:key="serverAddress"
@@ -69,13 +76,6 @@
             app:key="path"
             app:title="@string/http_path"
             app:useSimpleSummaryProvider="true" />
-        <moe.matsuri.nb4a.ui.SimpleMenuPreference
-            app:entries="@array/transport_layer_encryption_value"
-            app:entryValues="@array/transport_layer_encryption_value"
-            app:icon="@drawable/ic_baseline_layers_24"
-            app:key="security"
-            app:title="@string/security"
-            app:useSimpleSummaryProvider="true" />
     </PreferenceCategory>
 
     <PreferenceCategory
@@ -97,7 +97,8 @@
 
     <PreferenceCategory
         app:key="serverSecurityCategory"
-        app:title="@string/security_settings">
+        app:title="@string/security_settings"
+        app:isPreferenceVisible="false">
         <EditTextPreference
             app:icon="@drawable/ic_action_copyright"
             app:key="sni"
@@ -122,7 +123,8 @@
 
     <PreferenceCategory
         app:key="serverTlsCamouflageCategory"
-        app:title="@string/tls_camouflage_settings">
+        app:title="@string/tls_camouflage_settings"
+        app:isPreferenceVisible="false">
         <moe.matsuri.nb4a.ui.SimpleMenuPreference
             app:defaultValue=""
             app:entries="@array/utls_fingerprint_entry"
@@ -145,7 +147,8 @@
 
     <PreferenceCategory
         app:key="serverMuxCategory"
-        app:title="@string/mux_preference">
+        app:title="@string/mux_preference"
+        app:isPreferenceVisible="false">
         <SwitchPreference
             app:icon="@drawable/ic_baseline_compare_arrows_24"
             app:key="enableMux"
@@ -172,7 +175,8 @@
 
     <PreferenceCategory
         app:key="serverECHCategory"
-        app:title="ECH">
+        app:title="ECH"
+        app:isPreferenceVisible="false">
         <SwitchPreference
             app:icon="@drawable/ic_baseline_security_24"
             app:key="enableECH"

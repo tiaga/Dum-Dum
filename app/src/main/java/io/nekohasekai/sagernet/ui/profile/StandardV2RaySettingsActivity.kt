@@ -188,9 +188,9 @@ abstract class StandardV2RaySettingsActivity : ProfileSettingsActivity<StandardV
 
     private fun updateTls(tls: String) {
         val isTLS = "tls" in tls
-        securityCategory.isVisible = isTLS
-        tlsCamouflageCategory.isVisible = isTLS
-        echCategory.isVisible = isTLS
+        // securityCategory.isVisible = isTLS
+        // tlsCamouflageCategory.isVisible = isTLS
+        // echCategory.isVisible = isTLS
     }
 
 }
