@@ -42,14 +42,6 @@ class AboutFragment : ToolbarFragment(R.layout.layout_about) {
         parentFragmentManager.beginTransaction()
             .replace(R.id.about_fragment_holder, AboutContent())
             .commitAllowingStateLoss()
-
-        runOnDefaultDispatcher {
-            val license = view.context.assets.open("LICENSE").bufferedReader().readText()
-            onMainDispatcher {
-                binding.license.text = license
-                Linkify.addLinks(binding.license, Linkify.EMAIL_ADDRESSES or Linkify.WEB_URLS)
-            }
-        }
     }
 
     class AboutContent : MaterialAboutFragment() {
@@ -85,25 +77,17 @@ class AboutFragment : ToolbarFragment(R.layout.layout_about) {
                         .subText(versionName)
                         .setOnClickAction {
                             requireContext().launchCustomTab(
-                                "https://github.com/MatsuriDayo/NekoBoxForAndroid/releases"
+                                "https://github.com/tiaga/Dum-Dum/releases"
                             )
                         }
                         .build())
                     .addItem(
                         MaterialAboutActionItem.Builder()
-                        .icon(R.drawable.ic_baseline_layers_24)
-                        .text(getString(R.string.version_x, "sing-box"))
-                        .subText(Libcore.versionBox())
-                        .setOnClickAction { }
-                        .build())
-                    .addItem(
-                        MaterialAboutActionItem.Builder()
-                        .icon(R.drawable.ic_baseline_card_giftcard_24)
-                        .text(R.string.donate)
-                        .subText(R.string.donate_info)
+                        .icon(R.drawable.ic_action_description)
+                        .text(R.string.github)
                         .setOnClickAction {
                             requireContext().launchCustomTab(
-                                "https://matsuridayo.github.io/index_docs/#donate"
+                                "https://github.com/tiaga/Dum-Dum"
                             )
                         }
                         .build())
@@ -139,53 +123,6 @@ class AboutFragment : ToolbarFragment(R.layout.layout_about) {
                             }
                         }
                     }
-                    .apply {
-                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                            val pm = app.getSystemService(Context.POWER_SERVICE) as PowerManager
-                            if (!pm.isIgnoringBatteryOptimizations(app.packageName)) {
-                                addItem(
-                                    MaterialAboutActionItem.Builder()
-                                    .icon(R.drawable.ic_baseline_running_with_errors_24)
-                                    .text(R.string.ignore_battery_optimizations)
-                                    .subText(R.string.ignore_battery_optimizations_sum)
-                                    .setOnClickAction {
-                                        requestIgnoreBatteryOptimizations.launch(
-                                            Intent(
-                                                Settings.ACTION_REQUEST_IGNORE_BATTERY_OPTIMIZATIONS,
-                                                Uri.parse("package:${app.packageName}")
-                                            )
-                                        )
-                                    }
-                                    .build())
-                            }
-                        }
-                    }
-                    .build())
-                .addCard(
-                    MaterialAboutCard.Builder()
-                    .outline(false)
-                    .title(R.string.project)
-                    .addItem(
-                        MaterialAboutActionItem.Builder()
-                        .icon(R.drawable.ic_baseline_sanitizer_24)
-                        .text(R.string.github)
-                        .setOnClickAction {
-                            requireContext().launchCustomTab(
-                                "https://github.com/MatsuriDayo/NekoBoxForAndroid"
-
-                            )
-                        }
-                        .build())
-                    .addItem(
-                        MaterialAboutActionItem.Builder()
-                        .icon(R.drawable.ic_qu_shadowsocks_foreground)
-                        .text(R.string.telegram)
-                        .setOnClickAction {
-                            requireContext().launchCustomTab(
-                                "https://t.me/MatsuriDayo"
-                            )
-                        }
-                        .build())
                     .build())
                 .build()
 
