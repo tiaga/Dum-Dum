@@ -320,7 +320,6 @@
     <string name="tile_title">Bytter</string>
     <string name="quick_toggle">Veksle</string>
     <string name="menu_configuration">Konfigurasjon</string>
-    <string name="app_desc">Den universelle proxy -verktøykjeden for Android, skrevet i Kotlin.</string>
     <string name="group_filter">Raffinering</string>
     <string name="standard">Standard</string>
     <string name="obfs">Obfs</string>

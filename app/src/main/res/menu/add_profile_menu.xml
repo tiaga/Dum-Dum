@@ -32,8 +32,8 @@
                         android:id="@+id/action_import_file"
                         android:title="@string/action_import_file" />
                 </menu>
-             </item>
-             <item android:title="@string/add_profile_methods_manual_settings" android:visible="false">
+            </item>
+            <item android:title="@string/add_profile_methods_manual_settings" android:visible="false">
                 <menu>
                     <item
                         android:id="@+id/action_new_socks"
@@ -87,7 +87,7 @@
                         android:id="@+id/action_new_chain"
                         android:title="@string/proxy_chain" />
                 </menu>
-             </item>
+            </item>
         </menu>
     </item>
 

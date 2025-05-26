@@ -48,7 +48,6 @@
     <string name="telegram">Telegram 更新チャンネル</string>
     <string name="github">ソースコード</string>
     <string name="project">プロジェクト</string>
-    <string name="app_desc">Kotlinで記述されたAndroid用のユニバーサルプロキシツールチェーン。</string>
     <string name="cag_dns">DNS設定</string>
     <string name="speed">%s/s</string>
     <string name="traffic">%1$s↑ %2$s↓</string>
