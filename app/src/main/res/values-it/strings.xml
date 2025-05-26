@@ -7,5 +7,4 @@
     <string name="telegram">Canale di aggiornamento di Telegram</string>
     <string name="github">Codice sorgente</string>
     <string name="project">Progetto</string>
-    <string name="app_desc">La toolchain proxy universale per Android, scritta in Kotlin.</string>
 </resources>
