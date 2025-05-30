@@ -300,8 +300,8 @@
 <string name="profile_import_message">Подтвердите, что хотите импортировать профиль %s?</string>
 <string name="profile_name">Имя профиля</string>
 <string name="profile_requiring_plugin" formatted="false">Профиль %s требует установки подключаемого модуля %s, но он не найден.</string>
-<string name="profile_traffic_statistics">Статистика трафика профиля</string>
-<string name="profile_traffic_statistics_summary">Когда отключено, использованный трафик не будет отображаться</string>
+<string name="profile_traffic_statistics">Статистика трафика</string>
+<string name="profile_traffic_statistics_summary">Когда отключено, статистика трафика не учитывается</string>
 <string name="project">Проект</string>
 <string name="protocol">Протокол</string>
 <string name="protocol_param">Параметры протокола</string>
