@@ -33,11 +33,8 @@ data class RuleEntity(
         var summary = ""
         if (domains.isNotBlank()) summary += "$domains\n"
         if (ip.isNotBlank()) summary += "$ip\n"
-        if (source.isNotBlank()) summary += "source: $source\n"
-        if (sourcePort.isNotBlank()) summary += "sourcePort: $sourcePort\n"
         if (port.isNotBlank()) summary += "port: $port\n"
-        if (network.isNotBlank()) summary += "network: $network\n"
-        if (protocol.isNotBlank()) summary += "protocol: $protocol\n"
+        if (network.isNotBlank()) summary += "protocol: $network\n"
         if (packages.isNotEmpty()) summary += app.getString(
             R.string.apps_message, packages.size
         ) + "\n"
