@@ -136,13 +136,13 @@
     <string name="only">Only</string>
     <string name="metered">Metered Hint</string>
     <string name="metered_summary">Hint system to treat VPN as metered</string>
-    <string name="menu_route">Route</string>
+    <string name="menu_route">Routes</string>
     <string name="route_add">Create Route</string>
     <string name="delete_route_prompt">Are you sure you want to remove this route?</string>
     <string name="route_name">Route Name</string>
-    <string name="route_proxy">Proxy</string>
-    <string name="route_bypass">Bypass</string>
-    <string name="route_block">Block</string>
+    <string name="route_proxy">proxy</string>
+    <string name="route_bypass">bypass</string>
+    <string name="route_block">block</string>
     <string name="route_profile">Select Profile…</string>
     <string name="empty_route">Empty Route</string>
     <string name="empty_route_notice">Set some rules before saving</string>
